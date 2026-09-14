@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+float speed, time_val;
+double distance_km, distance_m, distance_cm, distance_mm;
+printf("65.5 km/h: ");
+scanf("%f", &speed);
+ printf("1.5hrs: ");
+scanf("%f", &time_val);
+ distance_km = speed * time_val;   
+distance_m = distance_km * 1000.0;
+distance_cm = distance_km * 100000.0;
+distance_mm = distance_km * 1000000.0;
+printf("\n--- Conversion Results ---\n");
+printf("Distance in Meters:       %.2f m\n", distance_m);
+printf("Distance in Centimeters:  %.2f cm\n", distance_cm);
+printf("Distance in Millimeters:  %.2f mm\n", distance_mm);
+ return 0;
+}
